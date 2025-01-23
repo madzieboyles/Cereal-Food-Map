@@ -2,30 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./src/index.css">
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Funnel Sans' rel='stylesheet'>
     <title>Global Food Trade</title>
-    <div id="pages"></div>
-    <h1>Global food trade</h1>
-    <h3>Dive into to dynamics of global food trade.</h3>
-  </head>
-  <body>   
-    <nav>
-        <a class="links selected" href="index.html"> Home</a>
-        <a class="links" href="home.html"> Login</a>
-        <a class="links" href="#"> Register</a>
-        <a class="links" href="#"> Contact Us</a>
-        <a class="links" href="#">More Info</a>
+    <header>
+      <nav>
+        <a class="links selected" href="home.html"> Home</a>
+        <a class="links" href="Insights.html"> Insights</a>
+        <a class="links" href="About.html"> About</a>
     </nav>
+    </header>
+    <h1> Global Cereal Trade</h1>
+    <h3>Visualising foodshocks</h3>
+  </head>
+  <body>
     <div id="root"></div>
-    <h2>About</h2>
-    <p>
-      * Aim
-      * Data criteria and processing
-    </p>
-    <h2>Sources</h2>
-    <p>This section lists the resources and data sets used for the map.</p>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.tsx">
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+    </script>
   </body>
 </html>
