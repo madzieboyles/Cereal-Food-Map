@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Funnel Sans' rel='stylesheet'>
+    <title>Global Food Trade</title>
+    <header>
+      <nav>
+        <a class="links" href="home.html"> Home</a>
+        <a class="links" href="Insights.html"> Insights</a>
+        <a class="links selected" href="About.html"> About</a>
+    </nav>
+    </header>
+  </head>
+
+  <body>
+    <h2>About</h2>
+      <p> 
+        In a 2022 study by Grassia, et al. titled “Insights into countries’ exposure and vulnerability to food trade shocks from network-based simulations,” food shocks were defined as a decrease in food production at any scale (2022, pp. 1). Common causes of global-scale food shocks are as follows: political instability and violence, crop and livestock destruction, the global climate crisis, economic stress, and forced displacement (World Food Programme FIX)(Hasegawa et al., 2021, pp. 587-589). To simplify calculations, this project took all causes into consideration and defined food shocks as a decrease in food production for any reason.
+      </p>
+    </div>
+    <h2>Data and Methods</h2>
+      <p>
+        The flow map displays the FAOSTAT global cereal trade in 2022, the latest year available. It maps import and export directions and quantities (in kilograms) between countries. The category cereal includes cereal straw, husks, unprepared, ground, pressed, or in the form of pellets, cereal preparations, cereals n.e.c. Following the FAO data names, “Reporter countries” are exporters and “Partner countries”  importers. 
+      
+      
+        The first step of data processing was to make the data into a spatial format where flow lines could be created. This process included several steps
+      </p>
+        <ol>
+          <li>Creating centroid points of each country using the UN Country boundaries dataset, which was used as the “origin” and “destination” points of our flows.</li>
+          <li>Exporting an Excel spreadsheet with the X/Y coordinates of each country.</li>
+          <li>In addition, exporting a similar Excel spreadsheet from the UN specifying the larger global regions each country is a part of.</li>
+          <li>We then wrote a python script that systematically joined each spreadsheet with each other, being careful to keep the data for “Reporter Country” and “Partner Country” separate. After joining all the data, we had six final columns: “Reporter Country”, “Reporter Country Coordinates”, “Reporter Subregion”, “Partner Country”, “Partner Country Coordinates”, “Partner Subregion”. For each pair of reporters and partner countries there was a value of trade in US tons.</li>
+          <li>US tons were converted to kilograms.</li>
+          <li>Our project also highlighted changes in trade patterns in the face of shocks to food production, as such, we created 9 additional value columns showing the cereal trade values in kilograms after a 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, and 90% decrease in production and subsequent trade.</li>
+        </ol>
+          <p>
+        The final data products were an Excel table containing all the country and subregion trade routes with their respective yearly exports and imports for 2022 and a second table containing the country names, code (as per the FAO) and coordinates for the Flowmap.city map. 
+          </p>
+      <p>
+      Partner countries are the origin and reporter countries are the destination. This shows the direction in which cereal is travelling.
+      The arrows are proportional to the amount in kilograms of cereal exported/imported. A hover over shows the exact value of the exchange.
+      The arrows can be filtered by country or location points can clicked on to show only the arrows to and from that point. 
+      </p>
+
+    <h2>Sources</h2>
+    <p>This section lists the resources and data sets used for the map.
+      <ul>
+        <li>Chouchane, H., Krol, M., & Hoekstra, A. (2018). Expected increase in staple crop imports in water-scarce countries in 2050. Water Research X. 1 (2589-9147). Retrieved from <a href="https://doi.org/10.1016/j.wroa.2018.09.001">https://doi.org/10.1016/j.wroa.2018.09.001</a>.</li>
+        <li>Grassia, M., Mangioni, G., Schiavo, S., & Traverso, S. (2022). Insights into countries’ exposure and vulnerability to food trade shocks from network-based simulations. Nature: Scientific Reports. 12 (4644) 1-16. Retrieved from <a href="https://doi.org/10.1038/s41598-022-08419-2">https://doi.org/10.1038/s41598-022-08419-2</a>.</li>
+        <li>Hasegawa, T., Sakurai, G., Fujimori, S., Takahashi, K., Hijoika, Y., & Masui, T. (2021). Extreme climate events increase risk of global food insecurity and adaptation needs. Nature: Food, (2) 587-595. Retrieved from <a href="https://doi.org/10.1038/s43016-021-00335-4">https://doi.org/10.1038/s43016-021-00335-4</a>. </li>
+        <li>Li, X., Wang, H., & Kharrazi, A. (2024). A network analysis of external shocks on the dynamics and resilience of the global staple food trade. Food Security. (16) 845–865. <a href="https://doi.org/10.1007/s12571-024-01462-z">https://doi.org/10.1007/s12571-024-01462-z</a>.</li>
+        <li><a href="https://www.fao.org/faostat/en/#data">FAOSTAT Cereal Trade Dataset</a>. </li>
+      </ul>
+    </p>
+    <h2>Contact</h2>
+    <p>Any questions? Get in touch at xxxx@gmail.com </p>
+    <img src="##" alt="MSc Cartography partners">
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
