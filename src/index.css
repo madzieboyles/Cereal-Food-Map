@@ -1,5 +1,5 @@
 header {
-  align-items: left;
+  align-items: right;
 }
 
 a {
@@ -11,7 +11,9 @@ a {
 
 body {
   font-family: 'Funnel Sans';
-  margin: 80px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 20px;
   }
 
 h1 {
@@ -20,6 +22,7 @@ h1 {
   font-weight: medium;
   font-size: 62px;
   text-align: center;
+  padding: 10px;
 }
 
 h2 {
@@ -28,6 +31,7 @@ h2 {
   font-weight: medium;
   font-size: 32px;
   text-align: center;
+  padding: 5px;
 }
 
 h3 {
@@ -64,6 +68,32 @@ li {
   margin: auto;
 }
 
+.button {
+  background-color: #28503c;
+  border: none;
+  color:  #fffef7;
+  padding: 10px 21px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 8px 4px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.button30 { background-color: #00429d;}
+.button60 { background-color: #4d004b;}
+.button90 { background-color: #7f2704;}
+
+footer {
+  background-color: #28503c;
+  padding: 30px;
+  color: #fffef7; 
+  margin-top:20px;
+}
+
+
 :root {
   background-color: #fffef7;
 }
@@ -71,5 +101,3 @@ li {
 #root {
   width: 100%;
 }
-
-
