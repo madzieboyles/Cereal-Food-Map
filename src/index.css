@@ -86,18 +86,17 @@ li {
 .button60 { background-color: #4d004b;}
 .button90 { background-color: #7f2704;}
 
-footer {
-  background-color: #28503c;
-  padding: 30px;
-  color: #fffef7; 
-  margin-top:20px;
-}
 
-
-:root {
-  background-color: #fffef7;
-}
 
 #root {
   width: 100%;
+  height: 80vh;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fffef7;
 }
+#root > * {
+  width: 100%;
+  height: 100%;
+}
+
