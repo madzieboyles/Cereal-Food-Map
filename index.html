@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
   <link href='https://fonts.googleapis.com/css?family=Funnel Sans' rel='stylesheet'>
     <title>Global Food Trade</title>
-   
     <header>
       <nav>
         <a class="links selected" href="home.html"> Home</a>
@@ -15,18 +14,23 @@
         <a class="links" href="About.html"> About</a>
     </nav>
     </header>
-    
     <h1> Global Cereal Trade</h1>
     <h3>Visualising foodshocks</h3>
   </head>
-
   <body>
-    <button id="trade">All Trade Values</button>
-    <button id="food30">Food Shocks 30%</button>
-    <button id="food60">Food Shocks 60%</button>
-    <button id="food90">Food Shocks 90%</button>
+    <div style="text-align:center;"><p>Select foodshock percentage</p>
+      <button id="trade" class="button button0">Current trade</button>
+      <button id="food30" class="button button30">30% foodshock</button>
+      <button id="food60" class="button button60">60% foodshock</button>
+      <button id="food90" class="button button90">90% foodshock</button>
+    </div>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.tsx" ></script>
   </body>
-
+  <footer> 
+    <div>
+      <p style="text-align:center;font-size:small; margin-top: 80px">Madeleine Boyles and Camille Rahier</p>
+      <p style="text-align:center;font-size:small; margin-bottom: 30px">MSc Cartography, Technical University of Munich - 2025</p>
+    </div>
+    </footer>
 </html>
