@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 const BASE_URL = 'https://madzieboyles.github.io/MappingProject/';
 
 const COLOR_SCHEME =
-  '#ffffe0,#c5eddf,#a5d5d8,#8abccf,#73a2c6,#5d8abd,#4771b2,#2e59a8,#00429d';
+  '#ffffe5,#f7fcb9,#d9f0a3,#addd8e,#78c679,#41ab5d,#238443,#006837,#004529';
 
 const config: ProjectConfig = {
   dataSources: [
