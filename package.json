@@ -1,4 +1,9 @@
 {
+  "homepage": "https://<username>.github.io/<repository>",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+  }
   "name": "flowmapcity-sdk-react-example",
   "private": true,
   "version": "0.0.0",
@@ -26,10 +31,4 @@
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   }
-  "homepage": "https://<username>.github.io/<repository>",
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-  // ... other scripts
-}
 }
