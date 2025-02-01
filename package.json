@@ -1,5 +1,5 @@
 {
-  "homepage": "https://<username>.github.io/<repository>",
+  "homepage": "https://madzieboyles.github.io/Cereal-Food-Map",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
